@@ -72,6 +72,8 @@ npm makes it super easy to make versioned releases!  This project is set up to r
 npm version patch # Or "minor," or "major"
 ```
 
+This will also use the [gh-pages](https://github.com/tschaub/gh-pages) utility to deploy your versioned project with [GitHub Pages](https://pages.github.com/).
+
 ## License
 
 MIT.
