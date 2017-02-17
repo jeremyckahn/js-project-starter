@@ -1,0 +1,3 @@
+/*! 0.0.1 */
+!function(e,o){"object"==typeof exports&&"object"==typeof module?module.exports=o():"function"==typeof define&&define.amd?define("modern-js-project.js",[],o):"object"==typeof exports?exports["modern-js-project.js"]=o():e["modern-js-project.js"]=o()}(this,function(){return function(e){function o(r){if(t[r])return t[r].exports;var n=t[r]={exports:{},id:r,loaded:!1};return e[r].call(n.exports,n,n.exports,o),n.loaded=!0,n.exports}var t={};return o.m=e,o.c=t,o.p="",o(0)}([function(e,o){"use strict";Object.defineProperty(o,"__esModule",{value:!0});o.helloWorld=function(){return"Hello, World!"}}])});
+//# sourceMappingURL=modern-js-project.js.map
