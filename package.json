@@ -1,0 +1,24 @@
+{
+  "name": "modern-js-project",
+  "version": "0.0.0",
+  "description": "A demonstration of modern JavaScript project structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --config webpack.test.config.js --open",
+    "test": "mocha ./node_modules/babel-core/register.js test/index.js",
+    "test:watch": "nodemon --exec \"npm test\" --watch src --watch test"
+  },
+  "author": "Jeremy Kahn <jeremyckahn@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
