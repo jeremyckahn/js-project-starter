@@ -27,11 +27,7 @@ npm install
 
 ## Authoring in ES6
 
-Painlessly write your code as beautiful ES6!  Thanks to [Webpack](https://webpack.github.io/), all of your code will be compiled down to more compatible ES5 code that can be easily consumed by downstream projects.
-
-```
-npm build
-```
+Painlessly write your code as beautiful ES6!  Thanks to [Webpack](https://webpack.github.io/), all of your code will be compiled down to more compatible ES5 syntax that can be easily used by downstream projects.
 
 ## Running tests (written in Mocha)
 
