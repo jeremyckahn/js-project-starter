@@ -12,11 +12,16 @@ This project provides a bootstrap for:
   * A build process
   * Versioned releases
 
-## Installation
+## Getting started
+
+To use this as the base for a new project:
 
 ```
-git clone https://github.com/jeremyckahn/modern-js-project.git
-cd modern-js-project
+git clone --depth=1 https://github.com/jeremyckahn/modern-js-project.git
+rm -rf modern-js-project/.git
+git init
+git add --all
+git commit -m "Initial commit"
 npm install
 ```
 
