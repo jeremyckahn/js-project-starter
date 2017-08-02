@@ -12,6 +12,8 @@ This project provides a bootstrap for:
   * A build process
   * Versioned releases
 
+[This blog post](https://tech.jellyvision.com/2017/08/javascript-projects-joining-the-present/) explores some of the motivations of this project.
+
 ## Getting started
 
 To use this as the base for a new project:
