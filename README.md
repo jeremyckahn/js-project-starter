@@ -16,15 +16,25 @@ This project provides a bootstrap for:
 
 ## Getting started
 
-To use this as the base for a new project:
+Here's a handy snippet you can add to your `.bash_profile` to create new tools easily:
 
 ```
-git clone --depth=1 https://github.com/jeremyckahn/modern-js-project.git
-rm -rf modern-js-project/.git
-git init
-git add --all
-git commit -m "Initial commit"
-npm install
+function new_js_project() {
+  if [ -z "$1" ];
+  then
+    "Must specify a project name as the first argument"
+    return
+  else
+    git clone --depth=1 https://github.com/jeremyckahn/modern-js-project.git "$1"
+    cd "$1" || exit 1
+    rm -rf .git
+    find . -type f -exec sed -i "" "s/modern-js-project/$1/g" {} \;
+    git init
+    git add --all
+    git commit -m "Initial commit"
+    npm install
+  fi
+}
 ```
 
 ## Authoring in ES6
