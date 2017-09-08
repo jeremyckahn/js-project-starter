@@ -12,18 +12,18 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        exclude: 'node_modules',
-        loader: 'babel-loader'
+        use: 'babel-loader',
+        exclude: path.join(__dirname, 'node_modules')
       }
     ]
   },
   resolve: {
-    modulesDirectories: [
-      path.join(__dirname, 'node_modules')
-    ],
+    modules: [
+      'node_modules'
+    ]
   },
   devServer: {
     port: 9123
