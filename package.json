@@ -2,7 +2,7 @@
   "name": "modern-js-project",
   "version": "0.0.0",
   "description": "A demonstration of modern JavaScript project structure",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --config webpack.test.config.js --open",

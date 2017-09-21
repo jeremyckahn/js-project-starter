@@ -1,12 +1,22 @@
-import { helloWorld } from '../index';
+import MyClass from '../src/index';
 import assert from 'assert';
 
-// Passing arrow functions ("lambdas") to Mocha is discouraged.
-// http://mochajs.org/#arrow-functions
-describe('Modern JavaScript Project', function () {
-  describe('helloWorld', function () {
-    it('works', function () {
-      assert.equal(helloWorld(), 'Hello, World!');
+describe('MyClass', () => {
+  let myClass;
+
+  beforeEach(() => {
+    myClass = new MyClass();
+  });
+
+  describe('constructor', () => {
+    it('constructs', () => {
+      assert(myClass instanceof MyClass);
+    });
+  });
+
+  describe('sayHello', () => {
+    it('says hello', () => {
+      assert.equal(myClass.sayHello(), 'Hello, World!');
     });
   });
 });
