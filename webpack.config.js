@@ -1,13 +1,16 @@
 const path = require('path');
 const Webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const package = require('./package.json');
 const { name, version } = package;
 
+const dist = 'dist';
+
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, `${dist}`),
     filename: `app.js`,
     library: `${name}`,
     libraryTarget: 'umd',
@@ -29,6 +32,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin([ dist ]),
     new Webpack.optimize.UglifyJsPlugin({
       compress: {
         dead_code: true,
