@@ -82,13 +82,14 @@ Your compiled code will wind up in the `dist` directory.
 You should make sure to update the [JSDoc](http://usejsdoc.org/) annotations as you work.  To view the formatted documentation in your browser:
 
 ```
+npm run doc
 npm run doc:view
 ```
 
-This will generate the docs are run them in your browser.  If you would like this to update automatically as you work, leave the task running in your shell and run this task in a second shell:
+This will generate the docs and run them in your browser.  If you would like this to update automatically as you work, run this task:
 
 ```
-npm run doc:watch
+npm run doc:live
 ```
 
 ## Versioned releases
