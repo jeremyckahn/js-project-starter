@@ -4,6 +4,12 @@ export default class MyClass {
    */
   constructor () {
 
+    /**
+     * @member MyClass#myBoolean
+     * @type {boolean}
+     * @default true
+     */
+    this.myBoolean = true;
   }
 
   /**
