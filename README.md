@@ -1,8 +1,6 @@
-# A Modern JavaScript Project
+# JavaScript Project Starter
 
-### A demonstration of modern JavaScript project structure
-
-This is a minimalist example of how you might set up a modern JavaScript project.  The goal is to establish a baseline set of features to build a project out of, while remaining unopinionated enough to be "guessable" by the average developer.  It's also designed with CI integration in mind by sticking to [npm scripts](https://docs.npmjs.com/misc/scripts) for running tasks.
+### My personal starting point for JavaScript projects
 
 This project provides a bootstrap for:
 
@@ -11,8 +9,6 @@ This project provides a bootstrap for:
   * Browser dev tool support
   * A build process
   * Versioned releases
-
-[This blog post](https://tech.jellyvision.com/2017/08/javascript-projects-joining-the-present/) explores some of the motivations of this project.
 
 ## Getting started
 
@@ -25,10 +21,10 @@ function new_js_project() {
     "Must specify a project name as the first argument"
     return
   else
-    git clone --depth=1 https://github.com/jeremyckahn/modern-js-project.git "$1"
+    git clone --depth=1 https://github.com/jeremyckahn/js-project-starter.git "$1"
     cd "$1" || exit 1
     rm -rf .git
-    find . -type f -exec sed -i "" "s/modern-js-project/$1/g" {} \;
+    find . -type f -exec sed -i "" "s/js-project-starter/$1/g" {} \;
     git init
     git add --all
     git commit -m "Initial commit"
