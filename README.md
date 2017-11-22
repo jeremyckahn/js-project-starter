@@ -52,6 +52,12 @@ npm test
 npm run test:watch
 ```
 
+You can also run the test suite in browsers via [Karma](https://karma-runner.github.io).  Only Chrome and Firefox are configured by default because other browsers are a little hard to get to run consistently.
+
+```
+npm run test:browsers
+```
+
 ## Debugging
 
 This project configures Webpack to generate [source maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) so you can use your browser's dev tools to debug your ES6 code just as easily as you would with ES5.
