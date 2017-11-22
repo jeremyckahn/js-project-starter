@@ -30,6 +30,8 @@ module.exports = function(config) {
       'test/index.js': ['webpack']
     },
 
+    webpack: require('./webpack.test.config.js'),
+
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -59,6 +61,31 @@ module.exports = function(config) {
     browsers: [
       'Chrome',
       'Firefox',
+
+      // The IE target is commented out because it will fail in most
+      // environments.  However, you can feel free to run the unit tests in
+      // IE10/Win7 with the following caveats:
+      //
+      // - You need to have VirtualBox installed.  If you are on OS X with Brew
+      // and Cask (https://caskroom.github.io/), you can do:
+      //
+      //   brew cask install virtualbox virtualbox-extension-pack
+      //
+      // - You need to have the VMs listed after this comment installed.  If
+      // you are on npm 5.5.x+, you can do this with:
+      //
+      //   npx iectrl install 'IE10 - Win7'
+      //
+      // - VirtualBox.app needs to be running before you run the tests
+      //
+      // - The tests are known to work in IE, but they can be a little flaky.
+      // If a run fails, just try running it one or two more times to see if
+      // that fixes this issue.  The flakiness is (probably) due to VM
+      // performance, rather than test stability.  Use the test results from
+      // the other browser environments as a bellwether before digging too
+      // deeply into what could be a spurious issue in the IE test environment.
+
+      //'IE10 - Win7',
     ],
 
 
