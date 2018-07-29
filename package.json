@@ -25,6 +25,7 @@
     "babel-core": "^6.23.1",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "concurrently": "^3.5.0",
     "gh-pages": "^1.1.0",
